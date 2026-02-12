@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 40 33% 98%;
+    --foreground: 150 25% 12%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 150 25% 12%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 150 25% 12%;
+
+    --primary: 142 52% 36%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 30 80% 55%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 40 20% 94%;
+    --muted-foreground: 150 10% 45%;
+
+    --accent: 30 80% 55%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 40 15% 88%;
+    --input: 40 15% 88%;
+    --ring: 142 52% 36%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 142 30% 96%;
+    --sidebar-foreground: 150 25% 12%;
+    --sidebar-primary: 142 52% 36%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 142 20% 92%;
+    --sidebar-accent-foreground: 150 25% 12%;
+    --sidebar-border: 142 15% 88%;
+    --sidebar-ring: 142 52% 36%;
+  }
+
+  .dark {
+    --background: 150 20% 7%;
+    --foreground: 40 33% 96%;
+
+    --card: 150 20% 10%;
+    --card-foreground: 40 33% 96%;
+
+    --popover: 150 20% 10%;
+    --popover-foreground: 40 33% 96%;
+
+    --primary: 142 52% 45%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 30 70% 50%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 150 15% 15%;
+    --muted-foreground: 40 10% 60%;
+
+    --accent: 30 70% 50%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62% 40%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 150 15% 18%;
+    --input: 150 15% 18%;
+    --ring: 142 52% 45%;
+
+    --sidebar-background: 150 20% 8%;
+    --sidebar-foreground: 40 33% 96%;
+    --sidebar-primary: 142 52% 45%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 150 15% 14%;
+    --sidebar-accent-foreground: 40 33% 96%;
+    --sidebar-border: 150 15% 18%;
+    --sidebar-ring: 142 52% 45%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+}
